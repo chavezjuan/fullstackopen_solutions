@@ -1,0 +1,20 @@
+title Creating a note (SPA)
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over browser:
+The js file fetched from the server, 
+when the onsubmit action happens,
+creates a new note, adds it to the 
+notes list, renders the note list
+on the page and sends the new note 
+to the server as JSON on the body 
+of POST request.
+end note
+
+
+note over server:
+The POST request contains a new note as JSON 
+in the body.The Content-type Header of the request 
+tells the server to see this data as JSON.
+end note
+server-->browser: HTML- code (201) - created
